@@ -1,0 +1,27 @@
+/**
+ * Created by wanglanfang on 2015/9/8.
+ */
+
+$(function(){
+     function item_callback(){
+
+        $('.item').mouseover(function(){
+            $(this).css('box-shadow', '0 1px 5px rgba(35,25,25,0.5)');
+            $('.btns',this).show();
+        }).mouseout(function(){
+            $(this).css('box-shadow', '0 1px 3px rgba(34,25,25,0.2)');
+            $('.btns',this).hide();
+        });
+
+
+
+    }
+
+    item_callback();
+
+    $('.item').fadeIn();
+    $(".title").css("color","#333");
+
+});
+
+
